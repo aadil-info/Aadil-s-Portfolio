@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   ExternalLink, 
@@ -34,7 +34,7 @@ const PROJECTS = [
       'Deployed on Render with production-ready Express.js + MongoDB backend'
     ],
     demoUrl: 'https://interview-backend-y74c.onrender.com/',
-    githubUrl: 'https://github.com/aadil-mansuri/Ai-Interview-platform',
+    githubUrl: 'https://github.com/aadil-info',
     databaseInfo: 'MongoDB Atlas (Collections: Users, Interviews, Resumes, AptitudeTests, Results, AdminLogs)',
   },
   {
@@ -54,7 +54,7 @@ const PROJECTS = [
       'Mobile-first responsive interface with intuitive UX'
     ],
     demoUrl: 'https://driveeasy-rentals.vercel.app',
-    githubUrl: 'https://github.com/aadil-mansuri/Car-Rental-platfoam',
+    githubUrl: 'https://github.com/aadil-info',
     databaseInfo: 'MongoDB (Collections: Users, Vehicles, Bookings, Reviews, Payments)',
   },
   {
@@ -74,7 +74,7 @@ const PROJECTS = [
       'Responsive design with light/dark workspace styling'
     ],
     demoUrl: 'https://flowsync-tms.vercel.app',
-    githubUrl: 'https://github.com/aadil-mansuri/TMS',
+    githubUrl: 'https://github.com/aadil-info',
     databaseInfo: 'MySQL (Relational Tables: users, tasks, columns, sprints, audit_logs)',
   },
 ];
@@ -221,7 +221,7 @@ export default function FeaturedProjects({ onSelectProject }) {
                     </button>
 
                     <a
-                      href={project.githubUrl}
+                      href={project.githubUrl || 'https://github.com/aadil-info'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-xl bg-white hover:bg-[#F9F8FD] text-[#111111] hover:text-[#6D3FEF] text-xs font-bold border border-[#E0E0E0] hover:border-[#D6C7FE] shadow-sm active:scale-95 transition-all"

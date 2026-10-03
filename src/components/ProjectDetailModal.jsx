@@ -149,7 +149,7 @@ export default function ProjectDetailModal({ project, onClose }) {
           {/* Modal Footer */}
           <div className="p-4 bg-[#FAFAFA] border-t border-[#ECECEC] flex items-center justify-between text-xs">
             <a
-              href={project.githubUrl}
+              href={project.githubUrl || 'https://github.com/aadil-info'}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-[#555555] hover:text-[#6D3FEF] font-semibold"

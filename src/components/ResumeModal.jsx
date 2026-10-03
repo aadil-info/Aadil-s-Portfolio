@@ -1,7 +1,7 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Printer, Mail, Phone, MapPin, Briefcase, GraduationCap, Code2, ExternalLink } from 'lucide-react';
-import { LinkedinIcon } from './Icons';
+import { LinkedinIcon, GithubIcon } from './Icons';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -79,7 +79,16 @@ export default function ResumeModal({ isOpen, onClose }) {
                   Bhilwara, Rajasthan
                 </span>
                 <a 
-                  href="https://www.linkedin.com/in/aadil-mansuri/" 
+                  href="https://github.com/aadil-info" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-1 text-[#6D3FEF] hover:underline"
+                >
+                  <GithubIcon className="w-3.5 h-3.5" />
+                  github.com/aadil-info
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/mohammad-aadil-mansuri/?isSelfProfile=true" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center gap-1 text-[#6D3FEF] hover:underline"

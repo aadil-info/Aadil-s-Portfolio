@@ -1,7 +1,8 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight, Sparkles, Send } from 'lucide-react';
 import Logo from './Logo';
+import { GithubIcon } from './Icons';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
@@ -95,8 +96,18 @@ export default function Navbar({ onOpenContact }) {
               })}
             </div>
 
-            {/* Right Action: Let's Talk */}
-            <div className="hidden sm:flex items-center gap-3">
+            {/* Right Action: GitHub & Let's Talk */}
+            <div className="hidden sm:flex items-center gap-2">
+              <a
+                href="https://github.com/aadil-info"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="p-2 rounded-full border border-[#EBEBEB] text-[#555555] hover:text-[#111111] hover:bg-[#F5F5F7] hover:border-[#D6C7FE] transition-all"
+              >
+                <GithubIcon className="w-4 h-4" />
+              </a>
+
               <a
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, '#contact')}
@@ -144,7 +155,16 @@ export default function Navbar({ onOpenContact }) {
                   <ArrowUpRight className="w-4 h-4 text-[#888888]" />
                 </a>
               ))}
-              <div className="pt-2">
+              <div className="pt-2 flex flex-col gap-2">
+                <a
+                  href="https://github.com/aadil-info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-[#E8E8E8] bg-[#FAFAFA] hover:bg-[#F5F3FF] text-[#222222] hover:text-[#6D3FEF] text-sm font-semibold transition-all"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  <span>GitHub Profile</span>
+                </a>
                 <a
                   href="#contact"
                   onClick={(e) => handleScrollTo(e, '#contact')}
