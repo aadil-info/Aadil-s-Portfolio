@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   ArrowRight, 
@@ -12,6 +12,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './Icons';
+import aadilCutoutImg from '../assets/aadil-cutout.png';
 
 export default function HeroSection({ onOpenResume }) {
   const credibilityPoints = [
@@ -189,7 +190,7 @@ export default function HeroSection({ onOpenResume }) {
               {/* Portrait Image with soft bottom fade */}
               <div className="w-full flex justify-center [mask-image:linear-gradient(to_bottom,black_78%,transparent_98%)] [-webkit-mask-image:linear-gradient(to_bottom,black_78%,transparent_98%)]">
                 <img
-                  src="/aadil-cutout.png"
+                  src={aadilCutoutImg}
                   alt="Mohammad Aadil Mansuri - Full Stack MERN Developer"
                   loading="eager"
                   className="w-full h-auto max-h-[640px] sm:max-h-[700px] lg:max-h-[760px] object-contain object-bottom select-none filter contrast-[1.02] brightness-[1.01]"

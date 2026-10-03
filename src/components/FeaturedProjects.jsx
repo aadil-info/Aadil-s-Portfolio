@@ -12,6 +12,9 @@ import {
   Maximize2
 } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import intervAiImg from '../assets/IntervAi.png';
+import driveEasyImg from '../assets/DriveEasy.png';
+import tmsPreviewImg from '../assets/tms-preview.jpg';
 
 const PROJECTS = [
   {
@@ -20,7 +23,7 @@ const PROJECTS = [
     badge: 'Flagship MERN Project',
     subtitle: 'IntervAI — Intelligent Mock Interview & Assessment System',
     description: 'A production-deployed full-stack AI interview platform. Simulate technical & behavioral rounds, get instant AI feedback, ATS resume scoring, and aptitude test analytics — all in one unified platform.',
-    image: '/IntervAi.png',
+    image: intervAiImg,
     domain: 'interview-backend-y74c.onrender.com',
     tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'OpenAI API', 'JWT', 'Render'],
     features: [
@@ -43,7 +46,7 @@ const PROJECTS = [
     badge: 'Production Web App',
     subtitle: 'Modern Vehicle Reservation & Fleet Management Engine',
     description: 'An end-to-end car rental platform featuring real-time vehicle catalogs, date-based booking reservation management, image asset optimization via ImageKit, and an administrative fleet management portal.',
-    image: '/driveEasy.png',
+    image: driveEasyImg,
     tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ImageKit'],
     features: [
       'Dynamic car listing catalog with multi-attribute filters',
@@ -63,7 +66,7 @@ const PROJECTS = [
     badge: 'Enterprise Productivity',
     subtitle: 'Interactive Kanban Board & Team Collaboration System',
     description: 'A robust task management suite with drag-and-drop Kanban workflow, granular task CRUD operations, team assignments, deadline trackers, and a structured relational MySQL schema for enterprise consistency.',
-    image: '/tms-preview.jpg',
+    image: tmsPreviewImg,
     tags: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'JWT'],
     features: [
       'Fluid drag-and-drop Kanban board (To-Do, In-Progress, Done)',
